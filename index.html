@@ -15,7 +15,7 @@
 
     header {
         background: linear-gradient(rgba(255,182,193,0.6), rgba(255,182,193,0.6)),
-        url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d');
+        url('https://images.unsplash.com/photo-1601758174114-e711c0cbaa69');
         background-size: cover;
         background-position: center;
         color: #5a2a2a;
@@ -51,12 +51,6 @@
         color: #d63384;
     }
 
-    .section-img {
-        width: 100%;
-        border-radius: 12px;
-        margin-top: 20px;
-    }
-
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -67,7 +61,7 @@
     .gallery img {
         width: 100%;
         border-radius: 12px;
-        height: 200px;
+        height: 220px;
         object-fit: cover;
     }
 
@@ -78,10 +72,36 @@
     }
 
     .card {
-        background: #ffffff;
+        background: white;
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+        margin-top: 15px;
+        padding: 10px;
+        background: #ffb6c1;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
     footer {
@@ -97,23 +117,21 @@
 
 <header>
     <h1>Hope Haven Animal Rescue</h1>
-    <p>Dedicated to Compassionate Animal Care and Lifelong Adoption Success</p>
+    <p>Providing Safe, Loving Homes for Companion Animals</p>
 </header>
 
 <nav>
     <a href="#mission">Mission</a>
     <a href="#services">Services</a>
     <a href="#adopt">Adopt</a>
-    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section id="mission">
     <h2>Our Mission</h2>
     <p>
-        Hope Haven Animal Rescue is committed to providing a safe and nurturing environment for animals in need while promoting ethical adoption practices and responsible pet ownership. Our organization operates with professionalism and compassion, ensuring that every rescued animal receives high-quality care and a meaningful opportunity to thrive in a permanent home.
+        Hope Haven Animal Rescue is dedicated to improving the lives of companion animals by providing safe shelter, professional medical care, and responsible adoption services. Our organization prioritizes the well-being of each animal while working to connect them with caring, permanent homes.
     </p>
-    <img class="section-img" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1">
 </section>
 
 <section id="services">
@@ -121,23 +139,23 @@
     <div class="card-container">
 
         <div class="card">
-            <h3>Rescue and Protection</h3>
+            <h3>Rescue Operations</h3>
             <p>
-                We respond to situations involving abandoned or endangered animals, providing immediate intervention and safe relocation. Our trained team ensures each rescue is handled with care, professionalism, and attention to the animal’s well-being.
+                We actively rescue dogs and cats from overcrowded shelters and unsafe environments, ensuring they receive immediate care and protection.
             </p>
         </div>
 
         <div class="card">
-            <h3>Medical Care</h3>
+            <h3>Veterinary Care</h3>
             <p>
-                All rescued animals receive thorough veterinary care, including vaccinations, treatment, and preventative services. Our goal is to restore each animal to optimal health prior to adoption.
+                Each animal receives vaccinations, medical treatment, and routine checkups to ensure they are healthy and ready for adoption.
             </p>
         </div>
 
         <div class="card">
-            <h3>Adoption Services</h3>
+            <h3>Adoption Matching</h3>
             <p>
-                We carefully evaluate potential adopters to ensure compatibility and long-term success. Our adoption program prioritizes responsible placement and lasting relationships between animals and families.
+                We carefully match animals with adopters to ensure compatibility, stability, and long-term success in every placement.
             </p>
         </div>
 
@@ -145,40 +163,44 @@
 </section>
 
 <section id="adopt">
-    <h2>Adopt a Pet</h2>
+    <h2>Adoptable Pets</h2>
     <p>
-        Choosing to adopt is a meaningful decision that directly supports animal welfare. Each adoption at Hope Haven represents a new beginning, offering animals the opportunity to experience stability, care, and companionship. Our team works closely with adopters to guide them through the process and ensure a successful transition.
+        The animals featured below represent the loving companions currently seeking permanent homes. Each one has been cared for, socialized, and prepared for a successful transition into family life.
     </p>
 
     <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8">
+        <!-- Dogs -->
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
+        <img src="https://images.unsplash.com/photo-1583511655826-05700442b31b">
+        <img src="https://images.unsplash.com/photo-1598137265932-9c17f5f46db1">
+
+        <!-- Cats -->
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131">
         <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006">
-        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
-    </div>
-</section>
-
-<section id="gallery">
-    <h2>Animal Gallery</h2>
-    <p>
-        Our rescue is home to a diverse range of animals, each with a unique story and personality. These images represent just a small portion of the lives we aim to transform through dedicated care and responsible adoption efforts.
-    </p>
-
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2">
-        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d">
-        <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b">
-        <img src="https://images.unsplash.com/photo-1591768575198-88dac53fbd0f">
-        <img src="https://images.unsplash.com/photo-1518715308788-3005759c8b02">
+        <img src="https://images.unsplash.com/photo-1595433562696-cc5d3c5e2d0b">
     </div>
 </section>
 
 <section id="contact">
-    <h2>Get Involved</h2>
+    <h2>Contact Us</h2>
     <p>
-        We welcome individuals who are interested in supporting our mission through volunteering, fostering, or financial contributions. Community engagement plays a critical role in sustaining our operations and expanding our ability to serve animals in need.
+        We encourage individuals interested in adoption, volunteering, or supporting our mission to reach out using the form below. Our team is committed to responding promptly and providing professional assistance.
     </p>
-    <img class="section-img" src="https://images.unsplash.com/photo-1583511655826-05700442b31b">
+
+    <div class="contact-form">
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </section>
 
 <footer>
